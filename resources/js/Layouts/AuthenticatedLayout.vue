@@ -233,7 +233,7 @@ const accountAndListFunc = (bool) => {
                 <div
                     class="flex h-[30px] border-[1px] border-[#232f3e] rounded-sm hover:border-[1px] hover:border-gray-100 cursor-pointer">
                     <div class="flex items-center justify-between px-2">
-                        <div class="text-[14px] text-white font-extrabold">John's Amazon.com</div>
+                        <div class="text-[14px] text-white font-extrabold">Muhammad's Amazon.com</div>
                     </div>
                 </div>
 
