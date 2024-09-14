@@ -1,18 +1,18 @@
+import "animate.css";
 import "../css/app.css";
 import "./bootstrap";
 
-import { createPinia } from "pinia";
-import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
-
-const pinia = createPinia();
-pinia.use(piniaPluginPersistedstate);
-
 import { createInertiaApp } from "@inertiajs/vue3";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
+import { createPinia } from "pinia";
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 import { createApp, h } from "vue";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
+
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
 
 createInertiaApp({
     title: (title) => `${title} - ${appName}`,

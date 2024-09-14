@@ -1,3 +1,13 @@
+<script setup>
+import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
+import { Head, Link } from '@inertiajs/inertia-vue3';
+import { toRefs } from 'vue';
+import PlusIcon from 'vue-material-design-icons/Plus.vue';
+
+const props = defineProps({ product: Object });
+const { product } = toRefs(props)
+</script>
+
 <template>
 
     <Head title="Address" />
@@ -54,13 +64,3 @@
         </div>
     </AuthenticatedLayout>
 </template>
-
-<script setup>
-import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
-import { Head, Link } from '@inertiajs/inertia-vue3';
-import { toRefs } from 'vue';
-import PlusIcon from 'vue-material-design-icons/Plus.vue';
-
-const props = defineProps({ product: Object });
-const { product } = toRefs(props)
-</script>

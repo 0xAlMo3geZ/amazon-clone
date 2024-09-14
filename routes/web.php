@@ -21,20 +21,21 @@ Route::get('/cart', function () {
     return Inertia::render('Cart');
 })->name('cart.index');
 
-Route::get('/address', [AddressController::class, 'index'])->name('address.index');
-
 Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
-
-Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
+
+Route::get('/address', [AddressController::class, 'index'])->name('address.index');
+
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
