@@ -6,8 +6,8 @@ import { Head, useForm, usePage } from '@inertiajs/vue3';
 
 const form = useForm({
     country: 'Egypt',
-    first_name: usePage().props.value.auth.user.first_name,
-    last_name: usePage().props.value.auth.user.last_name,
+    first_name: usePage().props.auth.user.first_name.value,
+    last_name: usePage().props.auth.user.last_name.value,
     addr1: '',
     addr2: '',
     city: '',
@@ -46,6 +46,7 @@ const submit = () => {
                         focus:border-orange-400
                         focus:ring-orange-400
                     " name="country">
+                    <option selected value="Egypt">Egypt</option>
                     <option selected value="United Kingdom">United Kingdom</option>
                     <option value="United States">United States</option>
                     <option value="Germany">Germany</option>
