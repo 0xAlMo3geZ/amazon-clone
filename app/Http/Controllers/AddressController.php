@@ -2,8 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Address;
-use Illuminate\Http\Request;
 use Inertia\Inertia;
 
 class AddressController extends Controller

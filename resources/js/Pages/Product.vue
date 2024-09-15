@@ -59,7 +59,7 @@ const isAlreadyInCart = computed(() => {
                             <div class="text-red-600 text-sm font-bold">${{ product.price }}</div>
                             <button :disabled="isAlreadyInCart" @click="addToCart(product)"
                                 class="bg-yellow-400 px-2 font-bold text-sm rounded-lg border shadow-sm cursor-pointer">
-                                <span v-if="isAlreadyInCart">Iten added</span>
+                                <span v-if="isAlreadyInCart">Item added!</span>
                                 <span v-else>Add to cart</span>
                             </button>
                         </div>
