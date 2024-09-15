@@ -280,10 +280,6 @@ const accountAndListFunc = (bool) => {
         </div>
 
         <footer class="bg-[#232F3E]">
-            <div
-                class="bg-[#37475A] hover:bg-gray-600 w-full p-3.5 cursor-pointer text-white font-extrabold text-center">
-                Back to top
-            </div>
             <div class="flex items-stretch justify-between max-w-[1000px] mx-auto p-10 text-white">
                 <ul>
                     <li class=" font-extrabold text-lg">Get to Know Us</li>
