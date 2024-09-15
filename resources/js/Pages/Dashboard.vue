@@ -28,7 +28,10 @@ import 'vue3-carousel/dist/carousel.css';
                 <div class="bg-white mx-2 p-2 text-md w-full text-center">
                     You are on amazon.com You can also shop on Amazon EG for millions of products with fast local
                     delivery.
-                    <span class="underline text-teal-600 cursor-pointer">Click here to go to amazon.eg</span>
+                    <span class="underline text-teal-600 cursor-pointer"><a href="http://amazon.eg"
+                            target="_blank">Click here
+                            to go to
+                            amazon.eg</a></span>
                 </div>
             </div>
 
